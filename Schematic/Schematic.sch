@@ -205,51 +205,35 @@ F 3 "~" H 8675 2875 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text GLabel 5850 5775 3    50   Input ~ 0
-IN2
+DIR1_L
 Wire Wire Line
 	5850 5575 5850 5775
 Text GLabel 5750 5775 3    50   Input ~ 0
-IN1
+DIR0_L
 Wire Wire Line
 	5750 5575 5750 5775
 Text GLabel 5950 5775 3    50   Input ~ 0
-IN3
+DIR0_R
 Wire Wire Line
 	5950 5575 5950 5775
 Text GLabel 6050 5775 3    50   Input ~ 0
-IN4
+DIR1_R
 Wire Wire Line
 	6050 5575 6050 5775
-Text GLabel 6600 2200 2    50   Input ~ 0
-IN2
 Wire Wire Line
 	6400 2200 6600 2200
-Text GLabel 6600 2300 2    50   Input ~ 0
-IN1
 Wire Wire Line
 	6400 2300 6600 2300
-Text GLabel 6600 2100 2    50   Input ~ 0
-IN3
 Wire Wire Line
 	6400 2100 6600 2100
-Text GLabel 6600 2000 2    50   Input ~ 0
-IN4
 Wire Wire Line
 	6400 2000 6600 2000
-Text GLabel 5650 5775 3    50   Input ~ 0
-ENA
 Wire Wire Line
 	5650 5575 5650 5775
-Text GLabel 6150 5775 3    50   Input ~ 0
-ENB
 Wire Wire Line
 	6150 5575 6150 5775
-Text GLabel 6600 1900 2    50   Input ~ 0
-ENA
 Wire Wire Line
 	6400 1900 6600 1900
-Text GLabel 6600 1800 2    50   Input ~ 0
-ENB
 Wire Wire Line
 	6400 1800 6600 1800
 Text GLabel 8475 4650 2    50   Input ~ 0
@@ -562,7 +546,7 @@ $EndComp
 Wire Wire Line
 	2850 4000 3175 4000
 Text GLabel 2525 3725 2    50   Input ~ 0
-SENSOR0
+ADC0
 Wire Wire Line
 	2525 3725 2425 3725
 Wire Wire Line
@@ -600,7 +584,7 @@ Connection ~ 1650 4600
 Wire Wire Line
 	2850 4600 3175 4600
 Text GLabel 2525 4325 2    50   Input ~ 0
-SENSOR1
+ADC1
 Wire Wire Line
 	2525 4325 2425 4325
 Wire Wire Line
@@ -675,7 +659,7 @@ Wire Wire Line
 Wire Wire Line
 	2850 5850 3175 5850
 Text GLabel 2525 5575 2    50   Input ~ 0
-SENSOR3
+ADC3
 Wire Wire Line
 	2525 5575 2425 5575
 Wire Wire Line
@@ -699,7 +683,7 @@ Wire Wire Line
 Wire Wire Line
 	2525 4950 2425 4950
 Text GLabel 2525 4950 2    50   Input ~ 0
-SENSOR2
+ADC2
 $Comp
 L power:GND #PWR04
 U 1 1 62049839
@@ -712,19 +696,19 @@ F 3 "" H 3175 6250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 5325 2000 0    50   Input ~ 0
-SENSOR0
+ADC0
 Wire Wire Line
 	5325 2000 5525 2000
 Text GLabel 5325 2100 0    50   Input ~ 0
-SENSOR1
+ADC1
 Wire Wire Line
 	5325 2100 5525 2100
 Text GLabel 5325 2200 0    50   Input ~ 0
-SENSOR2
+ADC2
 Wire Wire Line
 	5325 2200 5525 2200
 Text GLabel 5325 2300 0    50   Input ~ 0
-SENSOR3
+ADC3
 Wire Wire Line
 	5325 2300 5525 2300
 $Comp
@@ -770,4 +754,20 @@ NoConn ~ 5525 2500
 NoConn ~ 5525 2600
 NoConn ~ 5525 2700
 NoConn ~ 5525 2900
+Text GLabel 5650 5775 3    50   Input ~ 0
+PWM_L
+Text GLabel 6150 5775 3    50   Input ~ 0
+PWM_R
+Text GLabel 6600 2100 2    50   Input ~ 0
+DIR1_L
+Text GLabel 6600 2200 2    50   Input ~ 0
+DIR0_L
+Text GLabel 6600 2000 2    50   Input ~ 0
+DIR0_R
+Text GLabel 6600 1900 2    50   Input ~ 0
+DIR1_R
+Text GLabel 6600 2300 2    50   Input ~ 0
+PWM_L
+Text GLabel 6600 1800 2    50   Input ~ 0
+PWM_R
 $EndSCHEMATC
