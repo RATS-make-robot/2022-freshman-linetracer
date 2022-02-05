@@ -8,6 +8,5 @@
 ## 3D
 ![image](https://user-images.githubusercontent.com/48342925/151748477-4b357c4b-8e3c-4278-bae8-98914f859070.png)
 
-
 ## 회로도
-![image](https://user-images.githubusercontent.com/48342925/151709972-e7b42bfd-5369-488a-ad08-d7f652b3e7de.png)
+![image](https://user-images.githubusercontent.com/48342925/152637790-eb8469af-2762-460e-b83a-956a3da19f50.png)
