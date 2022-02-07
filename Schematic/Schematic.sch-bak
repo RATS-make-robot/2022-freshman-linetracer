@@ -46,24 +46,8 @@ F 3 "~" H 9150 5085 50  0001 C CNN
 	1    9150 5175
 	1    0    0    -1  
 $EndComp
-Text GLabel 4975 2700 2    50   Input ~ 0
-LED0
-Text GLabel 4975 2600 2    50   Input ~ 0
-LED1
-Text GLabel 4975 2500 2    50   Input ~ 0
-LED2
-Text GLabel 4975 2400 2    50   Input ~ 0
-LED3
 Wire Wire Line
-	4775 2700 4975 2700
-Wire Wire Line
-	4775 2600 4975 2600
-Wire Wire Line
-	4775 2500 4975 2500
-Wire Wire Line
-	4775 2400 4975 2400
-Text GLabel 1225 1650 0    50   Input ~ 0
-LED3
+	4775 2700 5125 2700
 $Comp
 L Device:LED D9
 U 1 1 61F7810E
@@ -87,11 +71,9 @@ F 3 "" H 2550 3175 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1225 1650 1375 1650
+	1000 1650 1375 1650
 Wire Wire Line
 	1675 1650 1825 1650
-Text GLabel 1225 2075 0    50   Input ~ 0
-LED2
 $Comp
 L Device:LED D10
 U 1 1 61F83992
@@ -104,11 +86,7 @@ F 3 "~" H 1975 2075 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	1225 2075 1375 2075
-Wire Wire Line
 	1675 2075 1825 2075
-Text GLabel 1225 2525 0    50   Input ~ 0
-LED1
 $Comp
 L Device:LED D11
 U 1 1 61F85E66
@@ -121,11 +99,7 @@ F 3 "~" H 1975 2525 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	1225 2525 1375 2525
-Wire Wire Line
 	1675 2525 1825 2525
-Text GLabel 1225 3000 0    50   Input ~ 0
-LED0
 $Comp
 L Device:LED D12
 U 1 1 61F85E75
@@ -137,8 +111,6 @@ F 3 "~" H 1975 3000 50  0001 C CNN
 	1    1975 3000
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	1225 3000 1375 3000
 Wire Wire Line
 	1675 3000 1825 3000
 Wire Wire Line
@@ -196,89 +168,30 @@ F 3 "~" H 1525 3000 50  0001 C CNN
 	1    1525 3000
 	0    1    1    0   
 $EndComp
-Text GLabel 7400 5625 3    50   Input ~ 0
-DIR1_L
 Wire Wire Line
-	7400 5425 7400 5625
-Text GLabel 7300 5625 3    50   Input ~ 0
-DIR0_L
+	7400 5425 7400 5700
 Wire Wire Line
-	7300 5425 7300 5625
-Text GLabel 7500 5625 3    50   Input ~ 0
-DIR0_R
+	7300 5425 7300 5700
 Wire Wire Line
-	7500 5425 7500 5625
-Text GLabel 7600 5625 3    50   Input ~ 0
-DIR1_R
+	7500 5425 7500 5700
 Wire Wire Line
-	7600 5425 7600 5625
+	7600 5425 7600 5700
 Wire Wire Line
-	4775 2200 4975 2200
+	7200 5425 7200 5700
 Wire Wire Line
-	4775 2300 4975 2300
+	7700 5425 7700 5700
 Wire Wire Line
-	4775 2100 4975 2100
-Wire Wire Line
-	4775 2000 4975 2000
-Wire Wire Line
-	7200 5425 7200 5625
-Wire Wire Line
-	7700 5425 7700 5625
-Wire Wire Line
-	4775 1900 4975 1900
-Wire Wire Line
-	4775 1800 4975 1800
-Text GLabel 9350 4850 2    50   Input ~ 0
-OUT1
-Text GLabel 6550 4825 0    50   Input ~ 0
-OUT1
-Wire Wire Line
-	6550 4825 6675 4825
+	6375 4825 6675 4825
 Wire Wire Line
 	9150 4975 9150 4850
 Wire Wire Line
-	9150 4850 9350 4850
-Text GLabel 6550 4925 0    50   Input ~ 0
-OUT2
+	9150 4850 9500 4850
 Wire Wire Line
-	6550 4925 6675 4925
-Text GLabel 9350 5650 2    50   Input ~ 0
-OUT2
+	6375 4925 6675 4925
 Wire Wire Line
 	9150 5475 9150 5650
 Wire Wire Line
-	9150 5650 9350 5650
-$Comp
-L Motor:Motor_DC M2
-U 1 1 61F968A7
-P 9925 5175
-F 0 "M2" H 10083 5171 50  0000 L CNN
-F 1 "Motor_DC" H 10083 5080 50  0000 L CNN
-F 2 "" H 9925 5085 50  0001 C CNN
-F 3 "~" H 9925 5085 50  0001 C CNN
-	1    9925 5175
-	1    0    0    -1  
-$EndComp
-Text GLabel 10150 4850 2    50   Input ~ 0
-OUT3
-Wire Wire Line
-	9925 4975 9925 4850
-Wire Wire Line
-	9925 4850 10150 4850
-Text GLabel 10150 5650 2    50   Input ~ 0
-OUT4
-Wire Wire Line
-	9925 5475 9925 5650
-Wire Wire Line
-	9925 5650 10150 5650
-Text GLabel 8025 4825 2    50   Input ~ 0
-OUT3
-Text GLabel 8025 4925 2    50   Input ~ 0
-OUT4
-Wire Wire Line
-	7875 4825 8025 4825
-Wire Wire Line
-	7875 4925 8025 4925
+	9150 5650 9500 5650
 $Comp
 L power:GND #PWR08
 U 1 1 61F9EF03
@@ -480,22 +393,12 @@ F 3 "~" H 2225 6075 50  0001 C CNN
 	1    2225 6075
 	-1   0    0    1   
 $EndComp
-Text GLabel 3700 2000 0    50   Input ~ 0
-ADC0
 Wire Wire Line
-	3700 2000 3900 2000
-Text GLabel 3700 2100 0    50   Input ~ 0
-ADC1
+	3550 2100 3900 2100
 Wire Wire Line
-	3700 2100 3900 2100
-Text GLabel 3700 2200 0    50   Input ~ 0
-ADC2
+	3550 2200 3900 2200
 Wire Wire Line
-	3700 2200 3900 2200
-Text GLabel 3700 2300 0    50   Input ~ 0
-ADC3
-Wire Wire Line
-	3700 2300 3900 2300
+	3550 2300 3900 2300
 $Comp
 L power:+5V #PWR06
 U 1 1 620B0937
@@ -539,22 +442,6 @@ NoConn ~ 3900 2500
 NoConn ~ 3900 2600
 NoConn ~ 3900 2700
 NoConn ~ 3900 2900
-Text GLabel 7200 5625 3    50   Input ~ 0
-PWM_L
-Text GLabel 7700 5625 3    50   Input ~ 0
-PWM_R
-Text GLabel 4975 2100 2    50   Input ~ 0
-DIR1_L
-Text GLabel 4975 2200 2    50   Input ~ 0
-DIR0_L
-Text GLabel 4975 2000 2    50   Input ~ 0
-DIR0_R
-Text GLabel 4975 1900 2    50   Input ~ 0
-DIR1_R
-Text GLabel 4975 2300 2    50   Input ~ 0
-PWM_L
-Text GLabel 4975 1800 2    50   Input ~ 0
-PWM_R
 Wire Wire Line
 	2550 1650 2550 2075
 Connection ~ 2550 2075
@@ -597,8 +484,6 @@ F 3 "~" H 9700 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8300 2200 8300 2450
-Wire Wire Line
 	8300 2200 8700 2200
 Wire Wire Line
 	9300 2200 9700 2200
@@ -629,19 +514,6 @@ Wire Wire Line
 Wire Wire Line
 	9700 3250 9000 3250
 $Comp
-L power:+BATT #PWR05
-U 1 1 620070BA
-P 8050 1975
-F 0 "#PWR05" H 8050 1825 50  0001 C CNN
-F 1 "+BATT" H 8065 2148 50  0000 C CNN
-F 2 "" H 8050 1975 50  0001 C CNN
-F 3 "" H 8050 1975 50  0001 C CNN
-	1    8050 1975
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8050 1975 8050 2200
-$Comp
 L power:+5V #PWR013
 U 1 1 6200C7B2
 P 10625 1975
@@ -669,10 +541,8 @@ F 3 "" H 5525 7000 50  0001 C CNN
 	1    5525 7000
 	1    0    0    -1  
 $EndComp
-Text GLabel 4875 5700 2    50   Input ~ 0
-ADC2
 Wire Wire Line
-	4875 5700 4775 5700
+	5125 5700 4775 5700
 Wire Wire Line
 	5525 6600 5525 7000
 Connection ~ 5525 6600
@@ -692,9 +562,7 @@ Connection ~ 4775 6600
 Wire Wire Line
 	4775 6325 4775 6600
 Wire Wire Line
-	4875 6325 4775 6325
-Text GLabel 4875 6325 2    50   Input ~ 0
-ADC3
+	5125 6325 4775 6325
 Wire Wire Line
 	5200 6600 5525 6600
 Wire Wire Line
@@ -767,9 +635,7 @@ Connection ~ 4775 5350
 Wire Wire Line
 	4775 5075 4775 5350
 Wire Wire Line
-	4875 5075 4775 5075
-Text GLabel 4875 5075 2    50   Input ~ 0
-ADC1
+	5125 5075 4775 5075
 Wire Wire Line
 	5200 5350 5525 5350
 Connection ~ 4000 5350
@@ -805,9 +671,7 @@ Connection ~ 4775 4750
 Wire Wire Line
 	4775 4475 4775 4750
 Wire Wire Line
-	4875 4475 4775 4475
-Text GLabel 4875 4475 2    50   Input ~ 0
-ADC0
+	5125 4475 4775 4475
 Wire Wire Line
 	5200 4750 5525 4750
 $Comp
@@ -886,10 +750,10 @@ Wire Wire Line
 Connection ~ 10375 2200
 Connection ~ 8300 2200
 $Comp
-L Device:Battery BT?
+L Device:Battery BT1
 U 1 1 61FADD44
 P 6900 2525
-F 0 "BT?" V 7050 2525 50  0000 C CNN
+F 0 "BT1" V 7050 2525 50  0000 C CNN
 F 1 "Battery" V 6750 2525 50  0000 C CNN
 F 2 "" V 6900 2585 50  0001 C CNN
 F 3 "~" V 6900 2585 50  0001 C CNN
@@ -897,10 +761,10 @@ F 3 "~" V 6900 2585 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Switch:SW_DPST_x2 SW?
+L Switch:SW_DPST_x2 SW1
 U 1 1 61FBE50C
 P 6300 2525
-F 0 "SW?" H 6325 2650 50  0000 C CNN
+F 0 "SW1" H 6325 2650 50  0000 C CNN
 F 1 "SW" H 6300 2425 50  0000 C CNN
 F 2 "" H 6300 2525 50  0001 C CNN
 F 3 "~" H 6300 2525 50  0001 C CNN
@@ -910,10 +774,10 @@ $EndComp
 Wire Wire Line
 	6500 2525 6700 2525
 $Comp
-L power:GND #PWR?
+L power:GND #PWR015
 U 1 1 61FC8F50
 P 7375 2675
-F 0 "#PWR?" H 7375 2425 50  0001 C CNN
+F 0 "#PWR015" H 7375 2425 50  0001 C CNN
 F 1 "GND" H 7380 2502 50  0000 C CNN
 F 2 "" H 7375 2675 50  0001 C CNN
 F 3 "" H 7375 2675 50  0001 C CNN
@@ -925,10 +789,10 @@ Wire Wire Line
 Wire Wire Line
 	7375 2525 7375 2675
 $Comp
-L power:+BATT #PWR?
+L power:+BATT #PWR014
 U 1 1 61FCE394
 P 5900 2350
-F 0 "#PWR?" H 5900 2200 50  0001 C CNN
+F 0 "#PWR014" H 5900 2200 50  0001 C CNN
 F 1 "+BATT" H 5915 2523 50  0000 C CNN
 F 2 "" H 5900 2350 50  0001 C CNN
 F 3 "" H 5900 2350 50  0001 C CNN
@@ -939,6 +803,142 @@ Wire Wire Line
 	5900 2350 5900 2525
 Wire Wire Line
 	5900 2525 6100 2525
+Text Label 3550 2000 0    50   ~ 0
+ADC0
+Wire Wire Line
+	3550 2000 3900 2000
+Text Label 3550 2100 0    50   ~ 0
+ADC1
+Text Label 3550 2200 0    50   ~ 0
+ADC2
+Text Label 3550 2300 0    50   ~ 0
+ADC3
+Text Label 5125 4475 2    50   ~ 0
+ADC0
+Text Label 5125 5075 2    50   ~ 0
+ADC1
+Text Label 5125 5700 2    50   ~ 0
+ADC2
+Text Label 5125 6325 2    50   ~ 0
+ADC3
+Wire Wire Line
+	8300 2200 8300 2450
 Wire Wire Line
 	8050 2200 8300 2200
+$Comp
+L power:+BATT #PWR05
+U 1 1 620070BA
+P 8050 1975
+F 0 "#PWR05" H 8050 1825 50  0001 C CNN
+F 1 "+BATT" H 8065 2148 50  0000 C CNN
+F 2 "" H 8050 1975 50  0001 C CNN
+F 3 "" H 8050 1975 50  0001 C CNN
+	1    8050 1975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 1975 8050 2200
+Text Label 6375 4825 0    50   ~ 0
+OUT1
+Text Label 6375 4925 0    50   ~ 0
+OUT2
+Wire Wire Line
+	8175 4925 7875 4925
+Wire Wire Line
+	8175 4825 7875 4825
+Text Label 8175 4925 2    50   ~ 0
+OUT4
+Text Label 8175 4825 2    50   ~ 0
+OUT3
+Text Label 9500 4850 2    50   ~ 0
+OUT1
+Text Label 9500 5650 2    50   ~ 0
+OUT2
+$Comp
+L Motor:Motor_DC M?
+U 1 1 6207D101
+P 10000 5175
+F 0 "M?" H 10158 5171 50  0000 L CNN
+F 1 "Motor_DC" H 10158 5080 50  0000 L CNN
+F 2 "" H 10000 5085 50  0001 C CNN
+F 3 "~" H 10000 5085 50  0001 C CNN
+	1    10000 5175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 4975 10000 4850
+Wire Wire Line
+	10000 4850 10350 4850
+Wire Wire Line
+	10000 5475 10000 5650
+Wire Wire Line
+	10000 5650 10350 5650
+Text Label 10350 4850 2    50   ~ 0
+OUT3
+Text Label 10350 5650 2    50   ~ 0
+OUT4
+Text Label 1000 1650 0    50   ~ 0
+LED0
+Wire Wire Line
+	1000 2075 1375 2075
+Text Label 1000 2075 0    50   ~ 0
+LED1
+Wire Wire Line
+	1000 2525 1375 2525
+Text Label 1000 2525 0    50   ~ 0
+LED2
+Wire Wire Line
+	1000 3000 1375 3000
+Text Label 1000 3000 0    50   ~ 0
+LED3
+Text Label 5125 2700 2    50   ~ 0
+LED0
+Wire Wire Line
+	4775 2600 5125 2600
+Text Label 5125 2600 2    50   ~ 0
+LED1
+Wire Wire Line
+	4775 2400 5125 2400
+Text Label 5125 2400 2    50   ~ 0
+LED3
+Wire Wire Line
+	4775 2500 5125 2500
+Text Label 5125 2500 2    50   ~ 0
+LED2
+Text Label 7200 5700 1    50   ~ 0
+ENA
+Text Label 7300 5700 1    50   ~ 0
+IN1
+Text Label 7400 5700 1    50   ~ 0
+IN2
+Text Label 7500 5700 1    50   ~ 0
+IN3
+Text Label 7600 5700 1    50   ~ 0
+IN4
+Text Label 7700 5700 1    50   ~ 0
+ENB
+Text Label 5125 1800 2    50   ~ 0
+ENB
+Text Label 5125 1900 2    50   ~ 0
+IN4
+Text Label 5125 2000 2    50   ~ 0
+IN3
+Text Label 5125 2100 2    50   ~ 0
+IN2
+Text Label 5125 2200 2    50   ~ 0
+IN1
+Text Label 5125 2300 2    50   ~ 0
+ENA
+Wire Wire Line
+	4775 1800 5125 1800
+Wire Wire Line
+	4775 2300 5125 2300
+Wire Wire Line
+	4775 1900 5125 1900
+Wire Wire Line
+	4775 2000 5125 2000
+Wire Wire Line
+	4775 2200 5125 2200
+Wire Wire Line
+	4775 2100 5125 2100
 $EndSCHEMATC
