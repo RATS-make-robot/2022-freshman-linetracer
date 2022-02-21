@@ -2,6 +2,10 @@
 
 2022 신입생 라인트레이서  
 
+## 작동 영상
+![ezgif-1-091fc016d1](https://user-images.githubusercontent.com/48342925/154978977-8f19ad4f-a6c3-4c2f-a03c-1b29bf391769.gif)
+
+
 ## Arduino
   - 아두이노 나노 사용
   - 예제 파일 올려둠
