@@ -14,7 +14,6 @@ void monitor_sensor(uint16_t* sensor_value);
 
 void setup() 
 {
-  sensor_init(); // ADC는 핀모드 설정 필요 없지 않나요?
   monitor_init();
 }
 
@@ -22,15 +21,6 @@ void loop()
 {
   sensor_read(sensor_value);
   monitor_sensor(sensor_value);
-}
-
-void sensor_init() // ADC는 핀모드 설정 필요 없지 않나요?
-{
-    pinMode(SENSOR_0,INPUT);
-    pinMode(SENSOR_1,INPUT);
-    pinMode(SENSOR_2,INPUT);
-    pinMode(SENSOR_3,INPUT);
-    pinMode(SENSOR_4,INPUT);
 }
 
 void sensor_read(uint16_t* sensor_value)

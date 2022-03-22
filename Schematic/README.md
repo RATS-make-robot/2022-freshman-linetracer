@@ -1,3 +1,2 @@
 # Schematic
-
-![image](https://user-images.githubusercontent.com/48342925/153256643-46ca99cd-52df-4049-99b0-2ab3060d8836.png)
+![image](https://user-images.githubusercontent.com/30527114/159402610-c2064dd6-0de8-46ce-ad64-0c8328bde96a.png)
