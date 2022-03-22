@@ -1,9 +1,10 @@
-#define SENSOR_0 A4
-#define SENSOR_1 A5
-#define SENSOR_2 A6
-#define SENSOR_3 A7
+#define SENSOR_0 A0
+#define SENSOR_1 A1
+#define SENSOR_2 A2
+#define SENSOR_3 A3
+#define SENSOR_4 A4
 
-uint16_t sensor_value[4] ={ 0, 0, 0, 0 };
+uint16_t sensor_value[5] ={ 0, 0, 0, 0, 0 };
 
 void sensor_init();
 void sensor_read(uint16_t* sensor_value);
@@ -13,7 +14,6 @@ void monitor_sensor(uint16_t* sensor_value);
 
 void setup() 
 {
-  sensor_init();
   monitor_init();
 }
 
@@ -23,20 +23,13 @@ void loop()
   monitor_sensor(sensor_value);
 }
 
-void sensor_init()
-{
-    pinMode(SENSOR_0,INPUT);
-    pinMode(SENSOR_1,INPUT);
-    pinMode(SENSOR_2,INPUT);
-    pinMode(SENSOR_3,INPUT);
-}
-
 void sensor_read(uint16_t* sensor_value)
 {
     sensor_value[0] = analogRead(SENSOR_0);
     sensor_value[1] = analogRead(SENSOR_1);
     sensor_value[2] = analogRead(SENSOR_2);
     sensor_value[3] = analogRead(SENSOR_3);
+    sensor_value[4] = analogRead(SENSOR_4);
 }
 
 void monitor_init()
@@ -56,5 +49,8 @@ void monitor_sensor(uint16_t* sensor_value)
     Serial.print("\t");
 
     Serial.print(sensor_value[3]);
+    Serial.println("\t");
+
+    Serial.print(sensor_value[4]);
     Serial.println("\t");
 }
