@@ -1,7 +1,8 @@
-#define LED_0 5
-#define LED_1 4
-#define LED_2 3
-#define LED_3 2
+#define LED_0 6
+#define LED_1 5
+#define LED_2 4
+#define LED_3 3
+#define LED_4 2
 
 void led_init();
 void led_test(uint8_t led_num);
@@ -17,6 +18,7 @@ void loop() {
   led_test(LED_1);
   led_test(LED_2);
   led_test(LED_3);
+  led_test(LED_4);
 }
 
 void led_init()
@@ -25,11 +27,13 @@ void led_init()
     pinMode(LED_1, OUTPUT);
     pinMode(LED_2, OUTPUT);
     pinMode(LED_3, OUTPUT);
+    pinMode(LED_4, OUTPUT);
 
     digitalWrite(LED_0, LOW);
     digitalWrite(LED_1, LOW);
     digitalWrite(LED_2, LOW);
     digitalWrite(LED_3, LOW);
+    digitalWrite(LED_4, LOW);
 }
 
 void led_test(uint8_t led_num)

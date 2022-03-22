@@ -1,9 +1,9 @@
-#define ENA 6
-#define IN1 7
-#define IN2 8
-#define IN3 9
-#define IN4 10
-#define ENB 11
+#define ENA 7
+#define IN1 8
+#define IN2 9
+#define IN3 10
+#define IN4 11
+#define ENB 12
 
 void motor_init();
 void motor_go(uint8_t speed1, uint8_t speed2);
